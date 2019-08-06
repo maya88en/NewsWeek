@@ -136,31 +136,137 @@ table {
 .momentum h2,
 .Top-story h2 {
     font-size: 15px;
-    
-    
-
 }
+
 
 .info a {
     color: black;
-    font-size: 17px;
-    line-height: 20px;
+    font-size: 16px;
     font-weight: bold;
+    font-family: "Roboto Condensed",sans-serif; 
 }
 
 .Opinion {
-    display: block;
-    margin-left: 77px;
-    position: absolute;
+    margin-left: 70px;
 }
 
-.headshot img {
-    position: relative;
+.Opinion .topic {
+    margin-left: 55px;
 }
 
-.info {
-    position: relative;
+.row .person {
+    padding: 5px 55px 5px 55px;
 }
+
+.person img {
+    padding-right: 15px;
+}
+
+.person h2 {
+    font-size: 14px;
+    line-height: 21px;
+    color: #555;
+    text-transform: uppercase;
+    margin-top: 4px;
+}
+
+.person {
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+/*====in-magazine======*/
+
+.magazine img {
+    width: 370px;
+    height: 250px;
+    padding: 0 40px 0 40px;
+}
+
+.first img {
+    height: 361px;
+    width: 350px;
+    padding: 1px 45px 0px 6px;
+    margin-left: 35px;
+
+}
+
+.first h5 {
+    padding: 0px 0px 20px 40px;
+}
+
+.title h2  {
+    font-size: 19px;
+    font-weight: bold;
+    font-family: Arial,Helvetica,sans-serif;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.right-block h3 {
+    border-bottom: 1px solid #d9d9d9;
+    padding-bottom: 8px;
+}
+
+.right-block h4,
+.second h4 {
+    font-size: 13px;
+    padding: 10px 0px 0 40px;
+}
+
+.right-block h4 a {
+    font-size: 13px;
+}
+
+.right-block h5 a,
+.first h5 a,
+.second h5 a {
+    font-size: 17px;
+    line-height: 20px;
+    padding: 10px 0px 0 38px;
+    color: black;
+    font-weight: bold;
+}
+
+.third-block title {
+    margin: 25px 0 25px 0;
+    padding: 25px 0 25px 0;
+}
+
+.third h5,
+.third h6 {
+    padding-right: 30px;
+    margin-left: 40px;
+}
+
+.third h6 {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 15px;
+}
+
+.fifth-section h2 {
+    text-align: left;
+    font-weight: bold;
+}
+
+.fifth-section h2 a {
+    color: orangered;
+}
+
+.fifth-section h5 {
+    margin-left: 30px;
+    
+}
+    
+
+
+
+
+
 
 
 

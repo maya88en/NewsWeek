@@ -139,7 +139,7 @@ table {
 
 .Top-story {
     display: block;
-    margin-left: -77px;
+    margin-left: -60px;
 }
 .Top-story img {
     width: 506px;
@@ -149,6 +149,8 @@ table {
 .culture {
     background-color: #f4f5f7;
     margin-bottom: 20px;
+    margin-left: 30px;
+    
 }
 
 .block-title {
@@ -157,13 +159,13 @@ table {
 }
 
 .culture img {
-    width: 239px;
+    width: 100%;
     height: 169px;
-    padding-left: 40px;
+    
 }
 
 .culture-item h2 {
-    padding-left: 40px;
+    
 }
 
 .stories img {
@@ -179,16 +181,14 @@ table {
 }
 
 .stories h2 {
-    padding-left: 73px;
+    padding-left: 33px;
     margin-top: -7px;
 }
 
-.stories h4 {
+.stories p {
     font-size: 15px;
     font-family: Arial,Helvetica,sans-serif;
-    line-height: 15px;
-    padding-left: 73px;
-    margin-right: -47px;
+    padding-left: 33px;
 }
 
 .news img {
@@ -262,8 +262,8 @@ table {
     padding-right: 43px;
 }
 
-.momentum a,
-.Top-story a {
+.momentum h1 a,
+.Top-story h1 a {
     color: black;
     font-weight: bold; 
 }
@@ -280,34 +280,42 @@ table {
     font-family: "Roboto Condensed",sans-serif; 
 }
 
-.Opinion {
-    margin-left: 70px;
+.topic {
+    color: rgba(3,3,3,.4);
+    font-family: "Roboto Condensed",sans-serif;
+    padding-bottom: 11px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
-.Opinion .topic {
-    margin-left: 55px;
+.topic a:hover {
+    text-decoration: none;
+    color: none;
 }
 
-.row .person {
-    padding: 5px 55px 5px 55px;
+.person a {
+    color: black;
+    font-weight: 900;
+    font-size: 15px;
+    font-family: "Roboto Condensed",sans-serif;
 }
 
-.person img {
-    padding-right: 15px;
+.person a:hover {
+    text-decoration: none;
+    color: #f72210;
 }
 
 .person h2 {
     font-size: 14px;
     line-height: 21px;
     color: #555;
-    text-transform: uppercase;
     margin-top: 4px;
 }
 
 .person {
     border-top: 1px solid #ddd;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
 }
 
 
@@ -357,15 +365,37 @@ table {
     font-size: 13px;
 }
 
+.first h5 {
+    display: block;
+    background-color: #f4f5f6;
+    color: black;
+    text-align: center;
+    margin-bottom: 33px;
+    padding: 10px 54px 10px 12px;
+    margin-left: 41px;
+    margin-right: -33px;
+    font: bold 18px/18px "Roboto Condensed",sans-serif;
+}
+.first h5 a {
+    line-height: 20px;
+    color: black;
+}
+
 .right-block h5 a,
-.first h5 a,
 .second h5 a {
     font-size: 17px;
     line-height: 20px;
-    padding: 10px 0px 0 38px;
     color: black;
     font-weight: bold;
+    font-family: "Roboto Condensed",sans-serif;
+    margin-left: 33px;
 }
+
+.right-block h5 a:hover,
+.second h5 a {
+    text-decoration-color: #f72210;
+}
+
 
 .third-block title {
     margin: 25px 0 25px 0;
@@ -373,12 +403,12 @@ table {
 }
 
 .third h5,
-.third h6 {
+.third p {
     padding-right: 30px;
     margin-left: 40px;
 }
 
-.third h6 {
+.third p {
     font-family: Arial,Helvetica,sans-serif;
     font-size: 15px;
 }
@@ -396,12 +426,37 @@ table {
     margin-left: 30px;   
 }
 
-.small-left h6 a {
-    font-size: 15 px;
+.small-left p a {
+    font-size: 17 px;
     line-height: 20px;
     color: black;
     font-weight: bold;
+    font-family: "Roboto Condensed",sans-serif;
 }
+
+
+.category  {
+    font: bold 16px/26px "Roboto Condensed",sans-serif;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+}
+
+.cover {
+    padding: 0 7px;
+    background-color: #f72210;
+    color: white;
+    margin-right: 7px;
+}
+
+.category a {
+    color: #f72210;
+}
+
+
+
+
     
 
 

@@ -106,8 +106,7 @@ table {
 }
 
 .momentum img {
-    width: 342px;
-    height: 228px;
+    width: 100%; 
 }
 
 .background-image-one {
@@ -137,22 +136,6 @@ table {
     margin-top: 30px;
 }
 
-.Top-story {
-    display: block;
-    margin-left: -60px;
-}
-.Top-story img {
-    width: 506px;
-    height: 311px;
-}
-
-.culture {
-    background-color: #f4f5f7;
-    margin-bottom: 20px;
-    margin-left: 30px;
-    
-}
-
 .block-title {
     color: rgba(3,3,3,.5);
     padding: 10px;
@@ -161,28 +144,62 @@ table {
 .culture img {
     width: 100%;
     height: 169px;
-    
+    margin-bottom: 24px;
 }
 
 .culture-item h2 {
-    
+    font: 15px "Helvetica Neue","Helvetica",Arial,sans-serif;
+    color: rgba(39,39,39,.5);
+    margin-bottom: 10px;
+}
+
+.culture-item h2 a {
+    text-decoration: none;
+    color: #272727;
+    font: 20px/22px "Lora",serif;
+}
+
+.tags {
+    font: 300 13px/20px "Helvetica Neue","Helvetica",Arial,sans-serif;
+    color: #272727;
+    background-color: #c2d4d7;
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    display: inline-block;
 }
 
 .stories img {
     width: 150px;
     height: 100px;
-    margin-bottom: 40px;
 }
 
 .stories h3 {
-    font-size: 14px;
+    font-size: 16px;
     color: gray;
     text-transform: uppercase;
+    margin-top: 9px;
+}
+
+.stories {
+    border-top: 1px solid #d9d9d9;
+    padding-top: 13px;
 }
 
 .stories h2 {
     padding-left: 33px;
     margin-top: -7px;
+    font-size: 16px;
+}
+
+.stories h2 a {
+    color: black;
+    font-weight: bold;
+}
+
+.stories h2 a:hover {
+    text-decoration-color: #f72210;
 }
 
 .stories p {
@@ -262,15 +279,18 @@ table {
     padding-right: 43px;
 }
 
+.Top-story img {
+    width: 100%;
+}
+
 .momentum h1 a,
 .Top-story h1 a {
     color: black;
     font-weight: bold; 
 }
 
-.momentum h2,
-.Top-story h2 {
-    font-size: 15px;
+.momentum h2 {
+    font-size: 16px;
 }
 
 .info a {
@@ -322,22 +342,18 @@ table {
 /*====in-magazine======*/
 
 .magazine img {
-    width: 370px;
+    /*width: 370px;
     height: 250px;
-    padding: 0 40px 0 40px;
+    padding: 0 40px 0 40px;*/
+    width: 100%;
 }
 
 .first img {
     height: 361px;
-    width: 350px;
-    padding: 1px 45px 0px 6px;
-    margin-left: 35px;
+    /*width: 100%;*/
+    /*padding: 1px 45px 0px 6px;*/
     margin-top: 30px;
 
-}
-
-.first h5 {
-    padding: 0px 0px 20px 40px;
 }
 
 .title h2  {
@@ -347,7 +363,7 @@ table {
     margin-bottom: 15px;
     text-transform: uppercase;
     text-align: center;
-    margin-top: 35px;
+    margin-top: 26px;
 }
 
 .right-block h3 {
@@ -358,33 +374,40 @@ table {
 .right-block h4,
 .second h4 {
     font-size: 13px;
-    padding: 10px 0px 0 40px;
+    /*padding: 10px 0px 0 40px;*/
 }
 
 .right-block h4 a {
     font-size: 13px;
 }
 
-.first h5 {
+/*.first h5 {
     display: block;
     background-color: #f4f5f6;
     color: black;
     text-align: center;
     margin-bottom: 33px;
     padding: 10px 54px 10px 12px;
-    margin-left: 41px;
-    margin-right: -33px;
     font: bold 18px/18px "Roboto Condensed",sans-serif;
-}
+}*/
+
 .first h5 a {
     line-height: 20px;
     color: black;
 }
 
+.third h5 a,
+.forth h5 a {
+    font-size: 24px;
+    line-height: 20px;
+    color: black;
+    font-weight: bold;
+    font-family: "Roboto Condensed",sans-serif;
+}
+
 .right-block h5 a,
 .second h5 a {
     font-size: 17px;
-    line-height: 20px;
     color: black;
     font-weight: bold;
     font-family: "Roboto Condensed",sans-serif;
@@ -392,7 +415,9 @@ table {
 }
 
 .right-block h5 a:hover,
-.second h5 a {
+.second h5 a,
+.third a:hover,
+.forth a:hover {
     text-decoration-color: #f72210;
 }
 
@@ -405,7 +430,7 @@ table {
 .third h5,
 .third p {
     padding-right: 30px;
-    margin-left: 40px;
+    /*margin-left: 40px;*/
 }
 
 .third p {
@@ -423,7 +448,7 @@ table {
 }
 
 .fifth-section h5 {
-    margin-left: 30px;   
+    /*margin-left: 30px;*/   
 }
 
 .small-left p a {

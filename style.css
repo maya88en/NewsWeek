@@ -1,88 +1,61 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/* END OF reset style */
-
-/*==== general =====*/
 *{
 	box-sizing: border-box;
 }
-
 
 .container.fluid {
     display: block;
     background: rgb(0, 255, 242);
     border: 1px solid brown;
-  
 }
 
 .header-top {
     background-color: #f72210;
     color: white;
+    height: 95px;
+    padding: 20px 10px 15px;
+    position: relative;
 }
 
 .header-top a {
     color: white;
-    font-size: 18px;
-
+    font-size: 16px;
 }
 
-.left-side {
+.middle {
+    position: absolute;
+    top: 0;
+    left: 35%;
+    padding-top: 17px;
+    padding-bottom: 10px; 
+}
+
+.middle .brand svg {
+    width: 396px;
+    fill: white;
+}
+
+.page-header .date {
+    display: block;
+    margin-left: 15px;
+    margin-top: 35px;
+}
+
+.header-top .left-side {
     font: bold 14px/14px "Roboto Condensed",sans-serif;
     text-transform: uppercase;
-    padding-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
-.middle img {
-    margin: 10px auto 0;
-    width: 395px;
-    height: 90px;
+.header-top .left-side a {
+    text-decoration: none;
+    color: white;
+}
+
+.header-top .left-side .button {
+    background-color: white;
+    color: #f72210;
 }
 
 .header-bottom {
@@ -90,14 +63,42 @@ table {
     background-color: white;
     border-bottom-color: #f4f5f6;
     padding-top: 15px;
-    padding-bottom: 15px;
     border-bottom-width: 2px;
     border-bottom-style: solid;
+    position: relative;
 }
 
 .header-bottom li {
     display: inline-block;
     font-size: 20px;
+}
+
+ul.page-nav {
+    font-size: 21px;
+    line-height: 24px;
+    font-family: "Roboto Condensed",sans-serif;
+}
+
+.page-nav li {
+    border-right: 1px solid #d9d9d9;
+    padding-right: 13px;
+    margin-right: 10px;
+}
+
+.header-bottom .label {
+    background: url(https://g.newsweek.com/www/images/icon-search-glass.svg) center/contain no-repeat white;
+    width: 20px;
+    height: 20px;
+    font-size: 0;
+    position: absolute;
+    right: 9%;
+    bottom: 40%;
+}
+
+.page-nav li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
 }
 
 .main {
@@ -109,21 +110,39 @@ table {
     width: 100%; 
 }
 
+.side-image{
+    position: relative;
+}
+
+.bottom-image-red {
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: red;
+}
+
+
 .background-image-one {
     background-image: url("../NewsWeek/Img/best-nursing-homes-2020.png");
     display: block;
     background-repeat: no-repeat;
     padding-bottom: 66.75%;
-    width: 342px;
     height: 228px;
+    margin-left: -18px;
+}
+
+.ad2 {
+    position: relative;
 }
 
 .homes {
     border: 1px solid #e6e6e6;
     padding: 0 30px 0 19px;
     background-color: white;
-    margin-right: 55px;
-    margin-top: -35px;
+    padding-inline-start: 30px;
 }
 
 .background-image-oil {
@@ -131,9 +150,12 @@ table {
     display: block;
     background-repeat: no-repeat;
     padding-bottom: 66.75%;
-    width: 342px;
     height: 228px;
     margin-top: 30px;
+}
+
+.ad4 {
+    position: relative;
 }
 
 .block-title {
@@ -208,16 +230,6 @@ table {
     padding-left: 33px;
 }
 
-.news img {
-    width: 135px;
-    height: 90px;
-}
-
-.news  a {
-    color: black;
-    font-size: 15px;
-}
-
 .background-image {
     background-image: url("../NewsWeek/Img/university-southern-california-sol-price-school-public-policy.jpg");
     background-size: cover;
@@ -226,10 +238,33 @@ table {
     padding-bottom: 66.75%;
 }
 
+.background-image-two {
+    background-image: url("../NewsWeek/Img/gold.jpg");
+    background-size: cover;
+    display: block; 
+    background-repeat: no-repeat;
+    padding-bottom: 66.75%;
+}
+
+.ad {
+    position: relative;
+}
+
+.bottom-image {
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: rgba(197, 196, 196, 0.836);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #3581f4;
+}
+
 .insight {
     border: 1px solid #e6e6e6;
     padding: 10px;
     background-color: white;
+    margin-bottom: 10px;
 }
 
 .insight a,
@@ -244,32 +279,48 @@ table {
 .homes a:hover {
     text-decoration: underline;
     text-decoration-color: #f72210;
-    color: black;
-    
+    color: black;   
 }
 
 .newsletter-signup {
-    max-width: 300px;
-    margin: 0 auto 30px;
+    margin: 0 auto 20px;
     border: 1px solid #e5e5e5;
     background-color: #f4f5f6;
     padding: 20px;
+    margin-top: 20px;
+}
+
+.newsletter-signup .button {
+    background-color: #666;
+    color: white;
+    padding: 5px;
+    margin: 0px 0px 0px 20px;
+    cursor: pointer;
 }
 
 .sign {
-    font-size: 19px;
-    font-weight: bold;
-    font-family: "Roboto Condensed",sans-serif;
+    font: bold 19px/19px "Roboto Condensed",sans-serif;
     margin-bottom: 15px;
     text-transform: uppercase;
 }
 
-.background-image-two {
-    background-image: url("../NewsWeek/Img/gold.jpg");
-    background-size: cover;
-    display: block; 
-    background-repeat: no-repeat;
-    padding-bottom: 66.75%;
+.sign .icon-n {
+    display: block;
+    width: 29px;
+    height: 28px;
+    background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain no-repeat #f72210;
+    margin-right: 10px;
+} 
+
+.newsletter-signup a {
+    color: #333;
+    font: bold 15px/15px "Roboto Condensed",sans-serif;
+}
+
+.newsletter-signup a:hover,
+.newsletter-signup .icon a:hover {
+    text-decoration: none;
+    color: black;
 }
 
 .header-main h1,
@@ -287,6 +338,7 @@ table {
 .Top-story h1 a {
     color: black;
     font-weight: bold; 
+    text-decoration-color: #f72210;
 }
 
 .momentum h2 {
@@ -309,19 +361,16 @@ table {
     text-transform: uppercase;
 }
 
-.topic a:hover {
-    text-decoration: none;
-    color: none;
-}
-
-.person a {
+.person a,
+.news a {
     color: black;
     font-weight: 900;
     font-size: 15px;
     font-family: "Roboto Condensed",sans-serif;
 }
 
-.person a:hover {
+.person a:hover,
+.news a:hover {
     text-decoration: none;
     color: #f72210;
 }
@@ -333,27 +382,35 @@ table {
     margin-top: 4px;
 }
 
-.person {
+.person,
+.news {
     border-top: 1px solid #ddd;
     padding-top: 5px;
 }
 
+.topic .news {
+    padding: 30px;
+}
 
-/*====in-magazine======*/
-
-.magazine img {
-    /*width: 370px;
-    height: 250px;
-    padding: 0 40px 0 40px;*/
+.news img {
     width: 100%;
 }
 
+/*====in-magazine======*/
+
 .first img {
     height: 361px;
-    /*width: 100%;*/
-    /*padding: 1px 45px 0px 6px;*/
     margin-top: 30px;
+}
 
+.magazine .right-block img,
+.magazine .second img {
+    width: 100%;
+    height: 275px;
+}
+
+.third img {
+    width: 100%;
 }
 
 .title h2  {
@@ -364,6 +421,60 @@ table {
     text-transform: uppercase;
     text-align: center;
     margin-top: 26px;
+    position: relative;
+}
+
+.title2 h2  {
+    font-size: 19px;
+    font-weight: bold;
+    font-family: Arial,Helvetica,sans-serif;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    text-align: left;
+    margin-top: 26px;
+}
+
+.title h2 {
+    border-bottom: 1px solid #d9d9d9;
+    padding-bottom: 8px; 
+}
+
+.title2 h2 {
+    border-top: 1px solid #d9d9d9;
+    padding-top: 15px;
+}
+
+.title .icon-n {
+display: block;
+width: 29px;
+height: 28px;
+background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain no-repeat #f72210;
+margin-right: 10px;
+position: absolute;
+right: 58%;
+bottom: 90%;
+}
+
+.title .icon-n2 {
+    display: block;
+    width: 29px;
+    height: 28px;
+    background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain no-repeat #f72210;
+    margin-right: 10px;
+    position: absolute;
+    right: 56%;
+    bottom: 90%;
+}
+
+.title .icon-n3 {
+    display: block;
+    width: 29px;
+    height: 28px;
+    background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain no-repeat #f72210;
+    margin-right: 10px;
+    position: absolute;
+    right: 59%;
+    bottom: 94%;
 }
 
 .right-block h3 {
@@ -381,15 +492,85 @@ table {
     font-size: 13px;
 }
 
-/*.first h5 {
+.first {
+    position: relative;
+}
+
+.bottom-image-red2 {
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: rgb(223, 223, 223);
+    position: absolute;
+    bottom: 88px;
+    left: 15px;
+    color: red;
+}
+
+.bottom-image-red3 {
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: rgb(238, 15, 15);
+    position: absolute;
+    bottom: 29%;
+    left: 15px;
+    color: white;
+}
+
+.bottom-image-red4 {
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: rgb(223, 223, 223);
+    position: absolute;
+    bottom: 53%;
+    left: 15px;
+    color: red;
+}
+
+.bottom-image-red5 {
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: rgb(223, 223, 223);
+    position: absolute;
+    bottom: 57%;
+    left: 15px;
+    color: red;
+}
+
+.inside-image {
+    position: relative;
+}
+
+.count-link {
+    width: 70px;
+    height: 52px;
     display: block;
-    background-color: #f4f5f6;
-    color: black;
+    position: absolute;
+    bottom: 17%;
+    left: 3%;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 58px;
+    text-indent: 5px;
     text-align: center;
-    margin-bottom: 33px;
-    padding: 10px 54px 10px 12px;
-    font: bold 18px/18px "Roboto Condensed",sans-serif;
-}*/
+    background: url(https://g.newsweek.com/themes/newsweek/images/icon-slideshows-nw.png) 0 0/contain no-repeat;
+    color: #e9212e;
+}
+
+.count-link a {
+    text-decoration: none;
+}
+
+.magazine .first .button {
+    background-color: rgb(233, 227, 227);
+    color: black;
+}
+
+.magazine .first  a {
+    font-weight: 700;
+    font-family: "Roboto Condensed",sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+}
 
 .first h5 a {
     line-height: 20px;
@@ -407,7 +588,7 @@ table {
 
 .right-block h5 a,
 .second h5 a {
-    font-size: 17px;
+    font-size: 19px;
     color: black;
     font-weight: bold;
     font-family: "Roboto Condensed",sans-serif;
@@ -416,7 +597,7 @@ table {
 .right-block h5 a:hover,
 .second h5 a,
 .third a:hover,
-.forth a:hover {
+.forth h5 a:hover {
     text-decoration-color: #f72210;
 }
 
@@ -437,18 +618,10 @@ table {
     font-size: 15px;
 }
 
-.fifth-section h2 {
-    text-align: left;
-    font-weight: bold;
-}
-
 .fifth-section h2 a {
     color: orangered;
+    text-decoration: none;
 }
-
-/*.fifth-section h5 {
-    margin-left: 30px;   
-}*/
 
 .small-left p a {
     color: black;
@@ -465,13 +638,11 @@ table {
 .category  {
     font: bold 16px/26px "Roboto Condensed",sans-serif;
     text-transform: uppercase;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 10px;
-    margin-left: 40px;
 }
 
 .cover {
-    padding: 0 7px;
     background-color: #f72210;
     color: white;
     margin-right: 7px;
@@ -491,6 +662,130 @@ table {
     text-decoration-color: #f72210;
 }
 
+.first-block {
+    background-color: #f4f5f6;
+    padding: 24px 20px 65px;
+    margin-bottom: 20px;
+}
+
+.back {
+    position: relative;
+}
+
+.upper {
+    position: absolute;
+    top: 15px;
+    right:0;
+}
+
+.second-block .left-side {
+    background: url("../NewsWeek/Img/subscribe-img2.gif")no-repeat;
+    padding-bottom: 316px;
+    background-size: cover;
+    background-position: center;  
+}
+
+.right-side {
+    border: 1px solid grey;
+    padding: 43px;
+    margin-right: 60px;
+}
+
+.right-side p {
+    margin-bottom: 23px;
+}
+
+.sixth .title3 {
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Arial,Helvetica,sans-serif;
+    text-transform: uppercase;
+    margin-top: 15px;
+    color: red;
+}
+
+.title3 h2 {
+    border-top: 1px solid #d9d9d9;
+    padding-top: 27px;
+}
+
+.second-block .newsletter-left {
+    padding-right: 0;
+}
+
+
+.second-block .newsletter-right {
+    padding-left: 0;
+}
+
+
+.page-footer {
+    border-top: 2px solid #f4f5f6;
+    background-color: white;
+    padding-top: 16px;
+}
+
+.page-footer .brand svg {
+    width: 236px;
+    fill: #f72210;
+}
+
+.page-footer .copyright {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #666;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.page-footer .footer-links {
+    border-top: 1px solid #d9d9d9;
+    padding-top: 6px;
+}
+
+.page-footer .footer-links a {
+    font-size: 14px;
+    line-height: 15px;
+    color: #666;
+    text-decoration: none;
+}
+
+.page-footer .footer-links li {
+    border-right: 1px solid #d9d9d9;
+    padding-right: 10px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.page-footer .footer-links a {
+    display: block;
+}
+
+.footer-links a:hover {
+    color: black;
+}
+
+.edition {
+    color: #666;
+    font-size: 15px;
+}
+
+.social i {
+    color: grey;
+    font-size: 23px;
+    padding-top: 20px;
+}
+
+.social i:hover {
+    color: blue;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
 
 
 

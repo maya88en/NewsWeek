@@ -85,20 +85,24 @@ ul.page-nav {
     margin-right: 10px;
 }
 
-.header-bottom .label {
+.header-bottom .search-icon {
     background: url(https://g.newsweek.com/www/images/icon-search-glass.svg) center/contain no-repeat white;
     width: 20px;
     height: 20px;
     font-size: 0;
     position: absolute;
-    right: 9%;
-    bottom: 40%;
+    right: 10%;
+    bottom: 32%;
 }
 
 .page-nav li a {
     text-decoration: none;
     color: black;
     font-weight: 900;
+}
+
+.page-nav li a:hover {
+    color: orangered;
 }
 
 .main {
@@ -124,7 +128,6 @@ ul.page-nav {
     color: red;
 }
 
-
 .background-image-one {
     background-image: url("../NewsWeek/Img/best-nursing-homes-2020.png");
     display: block;
@@ -142,7 +145,6 @@ ul.page-nav {
     border: 1px solid #e6e6e6;
     padding: 0 30px 0 19px;
     background-color: white;
-    padding-inline-start: 30px;
 }
 
 .background-image-oil {
@@ -243,10 +245,18 @@ ul.page-nav {
     background-size: cover;
     display: block; 
     background-repeat: no-repeat;
-    padding-bottom: 66.75%;
+    padding-bottom: 60.75%;
 }
 
-.ad {
+.background-image-three {
+        background-image: url("../NewsWeek/Img/perseid-meteor-shower.jpg");
+        background-size: cover;
+        display: block; 
+        background-repeat: no-repeat;
+        padding-bottom: 66.75%;
+    }
+
+.ad, .ad5 {
     position: relative;
 }
 
@@ -262,12 +272,19 @@ ul.page-nav {
 
 .insight {
     border: 1px solid #e6e6e6;
-    padding: 10px;
+    padding: 8px;
     background-color: white;
     margin-bottom: 10px;
 }
 
+.insight2 {
+    border: 1px solid #e6e6e6;
+    padding: 2px;
+    background-color: white;
+}
+
 .insight a,
+.insight2 a,
 .homes a {
     color: black;
     font-family: "Roboto Condensed",sans-serif;
@@ -276,6 +293,7 @@ ul.page-nav {
 }
 
 .insight a:hover,
+.insight2 a:hover,
 .homes a:hover {
     text-decoration: underline;
     text-decoration-color: #f72210;
@@ -719,7 +737,6 @@ bottom: 90%;
     padding-left: 0;
 }
 
-
 .page-footer {
     border-top: 2px solid #f4f5f6;
     background-color: white;
@@ -785,6 +802,38 @@ bottom: 90%;
     display: flex;
     justify-content: space-between;
     list-style: none;
+}
+
+.information a,
+.newsletter-right .right-side a {
+    font: bold 16px/16px "Roboto Condensed",sans-serif;
+    text-transform: uppercase;
+    color: white;
+    background-color: red;
+}
+
+.information a:hover,
+.newsletter-right .right-side a:hover {
+    text-decoration-line: none;
+    color: white;
+}
+
+.information h5 {
+    margin-bottom: 20px;
+    margin-top: 25px;
+    font-weight: 800;
+    margin-left: 20px;
+    font-size: 22px;
+}
+
+.information p {
+    margin-left: 20px;
+    margin-bottom: 25px;
+}
+
+.newsletter-right .right-side h5 {
+    font-weight: 800;
+    font-size: 22px;
 }
 
 

@@ -705,8 +705,10 @@ bottom: 90%;
 
 .right-side {
     border: 1px solid grey;
-    padding: 43px;
     margin-right: 60px;
+    margin-right: 60px;
+    padding: 24px 47px 65px;
+    margin-bottom: 20px;
 }
 
 .right-side p {

@@ -24,9 +24,8 @@
 .middle img {
     position: absolute;
     bottom: 0;
-    left: 0;
-    width: 55%;
-    margin-left: 45%; 
+    right: 0;
+    width: 55%; 
 }
 
 .page-header .date {
@@ -50,6 +49,13 @@
 .header-top .left-side .button {
     background-color: white;
     color: #f72210;
+}
+
+@media screen and (max-width: 768px) {
+.header-top .date { visibility: hidden; margin-top: 1px}
+.middle img {position: absolute; width: 46%; left:0px;}
+.header-top .left-side { position: absolute; right: 0; bottom: 5px;}
+.header-top a {font-size: 11px;}
 }
 
 .header-bottom {
@@ -82,7 +88,7 @@ ul.page-nav {
 
 .page-nav li {
     border-right: 1px solid #d9d9d9;
-    padding-right: 5px;
+    padding-right: 13px;
     margin-right: 18px;
 }
 
@@ -92,7 +98,7 @@ ul.page-nav {
     height: 20px;
     font-size: 0;
     position: absolute;
-    right: 10%;
+    right: 11%;
     bottom: 32%;
 }
 

@@ -76,7 +76,7 @@ ul.page-nav {
 
 .page-nav li {
     border-right: 1px solid #d9d9d9;
-    padding-right: 18px;
+    padding-right: 5px;
     margin-right: 18px;
 }
 
@@ -124,7 +124,7 @@ ul.page-nav {
 }
 
 .background-image-one {
-    background-image: url("../NewsWeek/Img/best-nursing-homes-2020.png");
+    background-image: url("Img/best-nursing-homes-2020.png");
     display: block;
     background-repeat: no-repeat;
     padding-bottom: 66.75%;
@@ -143,7 +143,7 @@ ul.page-nav {
 }
 
 .background-image-oil {
-    background-image: url("../NewsWeek/Img/gabon-report-aug-2019.jpg");
+    background-image: url("Img/gabon-report-aug-2019.jpg");
     display: block;
     background-repeat: no-repeat;
     padding-bottom: 66.75%;
@@ -226,7 +226,7 @@ ul.page-nav {
 }
 
 .background-image {
-    background-image: url("../NewsWeek/Img/university-southern-california-sol-price-school-public-policy.jpg");
+    background-image: url("Img/university-southern-california-sol-price-school-public-policy.jpg");
     background-size: cover;
     display: block; 
     background-repeat: no-repeat;
@@ -234,7 +234,7 @@ ul.page-nav {
 }
 
 .background-image-two {
-    background-image: url("../NewsWeek/Img/gold.jpg");
+    background-image: url("Img/gold.jpg");
     background-size: cover;
     display: block; 
     background-repeat: no-repeat;
@@ -242,7 +242,7 @@ ul.page-nav {
 }
 
 .background-image-three {
-        background-image: url("../NewsWeek/Img/perseid-meteor-shower.jpg");
+        background-image: url("Img/perseid-meteor-shower.jpg");
         background-size: cover;
         display: block; 
         background-repeat: no-repeat;
@@ -690,7 +690,7 @@ bottom: 90%;
 }
 
 .second-block .left-side {
-    background: url("../NewsWeek/Img/subscribe-img2.gif")no-repeat;
+    background: url("Img/subscribe-img2.gif")no-repeat;
     padding-bottom: 316px;
     background-size: cover;
     background-position: center;  

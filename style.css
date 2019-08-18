@@ -74,6 +74,12 @@ ul.page-nav {
     margin-left: 1%;
 }
 
+@media screen and (max-width: 768px) {
+    ul.page-nav {
+      display: none;
+    }
+  }
+
 .page-nav li {
     border-right: 1px solid #d9d9d9;
     padding-right: 5px;

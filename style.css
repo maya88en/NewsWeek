@@ -126,6 +126,21 @@ ul.page-nav {
     }
 }
 
+
+@media screen and (min-width: 992px) {
+.page-header .header-bottom::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    display: block;
+    width: 50px;
+    background-color: #f72210;
+    border-left: 12px solid white;
+    border-top: 13px solid #f72210;
+    }
+}
+
 .page-nav li a {
     text-decoration: none;
     color: black;

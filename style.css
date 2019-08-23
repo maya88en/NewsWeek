@@ -114,11 +114,11 @@ ul.page-nav {
     height: 20px;
     font-size: 0;
     position: absolute;
-    right: 11%;
+    right: 6%;
     bottom: 32%;
 }
 
-@media screen and (min-width:991px) {
+@media screen and (max-width:1128px) {
     .header-bottom .search-icon{
         position: absolute;
         right: 9%;

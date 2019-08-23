@@ -11,8 +11,6 @@
 .header-top {
     background-color: #f72210;
     color: white;
-    /*height: 95px;*/
-    /*padding: 20px 10px 15px;*/
     position: relative;
 }
 
@@ -80,7 +78,7 @@ ul.page-nav {
     margin-left: 1%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 990px) {
     ul.page-nav {
       display: none;
     }
@@ -508,7 +506,6 @@ bottom: 90%;
 .right-block h4,
 .second h4 {
     font-size: 13px;
-    /*padding: 10px 0px 0 40px;*/
 }
 
 .right-block h4 a {
@@ -633,7 +630,6 @@ bottom: 90%;
 .third h5,
 .third p {
     padding-right: 30px;
-    /*margin-left: 40px;*/
 }
 
 .third p {

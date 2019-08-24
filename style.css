@@ -14,20 +14,25 @@
     position: relative;
 }
 
-.header-top a {
+.header-top h1 {
     color: white;
-    font-size: 16px;
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
 }
 
-.middle img {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 55%; 
+
+@media screen and (max-width:990px){
+    .page-header .date {order: 1; display:none;}
+    .header-top h1 {color: white; font-size: 25px; font-weight: 900; text-align: left;}
 }
+
+@media screen and (max-width: 990px) {
+    .header-top .left-side { position: absolute; right: 0; bottom: 5px;}
+    .header-top a {font-size: 11px;}
+    }
 
 .page-header .date {
-    display: block;
     margin-left: 10px;
     margin-top: 35px;
 }
@@ -49,106 +54,36 @@
     color: #f72210;
 }
 
-@media screen and (max-width: 990px) {
-.header-top .date { visibility: hidden; margin-top: 1px}
-.middle img {position: absolute; width: 46%; left:0px;}
-.header-top .left-side { position: absolute; right: 0; bottom: 5px;}
-.header-top a {font-size: 11px;}
-}
-
 .header-bottom {
-    padding-right: 160px;
     background-color: white;
     border-bottom-color: #f4f5f6;
     padding-top: 15px;
     border-bottom-width: 2px;
-    border-bottom-style: solid;
-    position: relative;
+    border-bottom-style: solid; 
 }
 
-.header-bottom li {
-    display: inline-block;
-    font-size: 20px;
+.header-bottom a {
+    color: black;
+    font-size: 17px;
+}
+.header-bottom a:hover {
+    text-decoration: none;
+    color:orangered;
 }
 
-ul.page-nav {
-    font-size: 21px;
-    line-height: 24px;
-    font-family: "Roboto Condensed",sans-serif;
-    margin-left: 1%;
-}
-
-@media screen and (max-width: 990px) {
-    ul.page-nav {
-      display: none;
-    }
-  }
-
-.page-nav li {
-    border-right: 1px solid #d9d9d9;
-    padding-right: 13px;
-    margin-right: 18px;
-}
-
-@media screen and (min-width: 991px) {
-    .header-bottom ul.page-nav {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-}
-
-@media screen and (min-width: 991px) {
-    ul.page-nav li{
-        flex-grow: 1;
-        text-align: center;
-        list-style: none;
-        margin: 2px;
-        padding: 2px;
-        }
-    }
-
-.header-bottom .search-icon {
+.search-icon {
     background: url(https://g.newsweek.com/www/images/icon-search-glass.svg) center/contain no-repeat white;
-    width: 20px;
     height: 20px;
     font-size: 0;
-    position: absolute;
-    right: 6%;
-    bottom: 32%;
+    right: 3%;
+    top: 3px;
 }
 
 @media screen and (max-width:1128px) {
-    .header-bottom .search-icon{
-        position: absolute;
-        right: 9%;
+    .search-icon{
+        right: 1%;
         bottom: 50%;
     }
-}
-
-
-@media screen and (min-width: 992px) {
-.page-header .header-bottom::before {
-    position: absolute;
-    top: 0;
-    right: 0;
-    content: "";
-    display: block;
-    width: 50px;
-    background-color: #f72210;
-    border-left: 12px solid white;
-    border-top: 13px solid #f72210;
-    }
-}
-
-.page-nav li a {
-    text-decoration: none;
-    color: black;
-    font-weight: 900;
-}
-
-.page-nav li a:hover {
-    color: orangered;
 }
 
 .main {
